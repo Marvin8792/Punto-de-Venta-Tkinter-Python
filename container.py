@@ -32,6 +32,44 @@ class Container(tk.Frame):
     def show_frame(self,container):
         frame = self.frames[container]
         frame.tkraise()
+
+    def ventas(self):
+        self.show_frame(Ventas)
+
+    def inventario(self):
+        self.show_frame(Inventario)
+    
+    def clientes(self):
+        self.show_frame(Clientes)
+    
+    def pedidos(self):
+        self.show_frame(Pedidos)
+
+    def proveedor(self):
+        self.show_frame(Proveedor)
+
+    def informacion(self):
+        self.show_frame(Informacion)
     
     def widgets(self):
-        pass
+        frame2 = Frame(self, bg="black")
+        frame2.place(x=0, y=0, width=1100, height=40)
+
+        # Lista de botones con sus propiedades
+        botones = [
+            {"text": "Ventas", "command": self.ventas},
+            {"text": "Inventario", "command": self.inventario},
+            {"text": "Clientes", "command": self.clientes},
+            {"text": "Pedidos", "command": self.pedidos},
+            {"text": "Proveedor", "command": self.proveedor},
+            {"text": "Informacion", "command": self.informacion},
+        ]
+
+        # Crear botones dinámicamente
+        for i, boton in enumerate(botones):
+            frame = Frame(frame2, bg="black")
+            frame.place(x=i * 184, y=0, width=184, height=40)
+            btn = Button(frame, text=boton["text"], command=boton["command"], bg="white", font=("Arial", 12))
+            btn.place(x=0, y=0, width=184, height=40)
+
+            

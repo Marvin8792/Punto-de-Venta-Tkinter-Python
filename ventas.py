@@ -7,4 +7,5 @@ class Ventas(tk.Frame):
         self.widgets()
 
     def widgets(self):
-        pass
+        label= Label(self, text="Ventas", font=("Arial", 20), bg="#C6D3E3")
+        label.pack()
