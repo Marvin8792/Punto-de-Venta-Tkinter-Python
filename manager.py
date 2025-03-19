@@ -9,7 +9,7 @@ import os
 class Manager(Tk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.title("Mini Markert v1.0")
+        self.title("Supermercado el vuelto loco ")
         self.geometry("1100x650+120+20")
         self.resizable(False, False)
 
@@ -22,7 +22,7 @@ class Manager(Tk):
             frame = F(container, self)
             self.frames[F] = frame
 
-        self.show_frame(Container)
+        self.show_frame(Registro)
 
         self.style = ttk.Style()
         self.style.theme_use("classic")

@@ -9,7 +9,6 @@ from informacion import Informacion
 import sys
 import os
 
-
 class Container(tk.Frame):
     def __init__(self,padre,controlador):
         super().__init__(padre)
