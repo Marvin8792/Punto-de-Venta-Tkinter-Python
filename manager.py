@@ -9,7 +9,7 @@ import os
 class Manager(Tk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.title("Supermercado el vuelto loco ")
+        self.title("Supermercado el vuelto loco")
         self.geometry("1100x650+120+20")
         self.resizable(False, False)
 
@@ -22,7 +22,7 @@ class Manager(Tk):
             frame = F(container, self)
             self.frames[F] = frame
 
-        self.show_frame(Registro)
+        self.show_frame(Login)
 
         self.style = ttk.Style()
         self.style.theme_use("classic")

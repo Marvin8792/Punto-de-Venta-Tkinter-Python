@@ -11,7 +11,7 @@ Necesitas tener Python instalado en tu sistema. Se recomienda usar un entorno vi
 Ejecuta los siguientes comandos para instalar las librerías necesarias:
 
 ```sh
-pip install db-sqlite3
+pip install mysql-connector-python
 ```
 ```sh
 pip install ttkthemes
